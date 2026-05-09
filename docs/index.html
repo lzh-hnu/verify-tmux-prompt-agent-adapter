@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Verify tmux for prompt_agent: Prompt-Conditioned Session Adapter</title>
+    <meta name="description" content="A verification page for prompt-conditioned terminal sessions mediated through tmux.">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <p class="kicker">tmux verification research</p>
+          <h1>Verify tmux for prompt_agent: Prompt-Conditioned Session Adapter</h1>
+          <p class="subtitle">A verification page for prompt-conditioned terminal sessions mediated through tmux.</p>
+          <div class="meta-grid" aria-label="Project metadata">
+            <div class="meta-item"><span class="meta-label">Agent</span><span class="meta-value">prompt_agent</span></div>
+            <div class="meta-item"><span class="meta-label">Track</span><span class="meta-value">Adapter Verification</span></div>
+            <div class="meta-item"><span class="meta-label">Artifact</span><span class="meta-value">Static GitHub Pages verification</span></div>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <img class="hero-image" src="./assets/hero.png" width="700" height="500" alt="Verification illustration for Verify tmux for prompt_agent: Prompt-Conditioned Session Adapter">
+        </figure>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Verification Brief</h2>
+        <div>
+          <p>The prompt_agent adapter is checked for whether prompt context, terminal state, and tmux pane identity remain synchronized.</p>
+          <p>This page shares the fixed image placement but emphasizes prompt lifecycle and session memory.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Check Question</h2>
+        <div class="callout">
+          <p>How can prompt_agent keep prompt instructions tied to the correct tmux pane and command phase?</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Trace Notes</h2>
+        <div>
+          <ul>
+            <li>Prompt context is stored alongside pane state.</li>
+            <li>Instruction changes are marked before command execution.</li>
+            <li>Session memory is compared with current terminal output.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Review Lens</h2>
+        <div>
+          <ul>
+            <li>Prompt-to-pane binding</li>
+            <li>Instruction drift detection</li>
+            <li>Session memory consistency</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Verification Discussion</h2>
+        <div>
+          <p>Prompt-conditioned agents can fail quietly when the prompt still looks valid but the pane context has changed. Verification should expose that drift.</p>
+          <p>A stronger adapter can add guardrails that require prompt and pane metadata to agree before acting.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Generated as a public verification site for prompt_agent and tmux adaptation.</p>
+    </footer>
+  </body>
+</html>
